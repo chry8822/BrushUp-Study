@@ -8,8 +8,8 @@
 <br>
 
 <p align="center">
-한국스타트업포럼<br>
-(Koreastartupforum)<br>
+한국스타트업<br>
+(Koreastartup)<br>
 HTML - 마크업 구조 이해하고 시멘틱한 태그로 구성해보기 
 <br>
 <br>
