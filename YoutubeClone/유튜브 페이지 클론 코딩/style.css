@@ -71,6 +71,7 @@ header .icons .fa-search {
   top:0;
   text-align: center;
   background-color: black;
+  z-index: 550;
 }
 
 .player video {
