@@ -15,14 +15,10 @@ HTML - 마크업 구조 이해하고 시멘틱한 태그로 구성해보기
 <br>
 
 
-<p align="center">
-<a href="https://chry8822.github.io/front_end_like_lion_learning/html%20%EA%B3%BC%EC%A0%9C%20-%20%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EB%A7%88%ED%81%AC%EC%97%85/koreaStartup.html">
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
+ 
+[ 복습내용링크 ](https://chry8822.github.io/front_end_like_lion_learning/html%20%EA%B3%BC%EC%A0%9C%20-%20%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EB%A7%88%ED%81%AC%EC%97%85/koreaStartup.html)
 
-</p>
-<p align="center">
--복습내용링크-
-
+ 
 <br>
 <br><br><br><br>
  
@@ -59,6 +55,11 @@ diplay:flex 와 position: sitky 를 메인으로 활용하여 만들어 봤는�
 
 <br>
 <br>
-아래는 완성된 이미지
+아래는 완성된 이미지 와 링크
 <br>
+
+[ 링크 바로가기 ](https://chry8822.github.io/front_end_like_lion_learning/YoutubeClone/%EC%9C%A0%ED%8A%9C%EB%B8%8C%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%ED%81%B4%EB%A1%A0%20%EC%BD%94%EB%94%A9/Youtube.html)
+         
+<br>
+         
 <img width="500px" src="https://user-images.githubusercontent.com/89508217/140650367-2077ba68-d2ea-484d-9a44-91faa4c790b5.jpg">
