@@ -35,6 +35,9 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 
 button,
 button:focus {
