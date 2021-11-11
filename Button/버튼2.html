@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼2</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+
+      
+      html, body {
+        height: 100%;
+        font-family: 'Dongle', sans-serif;
+      }      
+      .wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button {
+        position: relative;
+        font-size: 30px;
+        color: gray;
+        background-color: #fff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding: 6px 30px;
+        border:none ;
+        overflow: hidden;
+        transition: all 1s;
+      }
+      .button:hover {
+        color: whitesmoke;   
+        z-index: 999;     
+        background-color: transparent;
+      }
+      .button::before {
+        top: 0;
+        left: 0;        
+        content: "";
+        position: absolute;
+        width: 300px ;
+        height: 100px;
+        transform: translatex(-300px) skewX(30deg);
+        /* transform: skewX(15deg); */
+        background: transparent;
+        transition: all 1s;
+        z-index: -2;
+      }
+      .button:hover::before {
+        background: rgb(117, 117, 117);
+        transform: translateX(0);
+        color: whitesmoke;
+      }
+
+      .button::after {
+        top: 0;
+        left: 0;        
+        content: "";
+        position: absolute;
+        width: 300px ;
+        height: 100px;
+        transform: translatex(-300px) skewX(30deg);
+        /* transform: skewX(15deg); */
+        background: transparent;
+        transition: all 2s;
+        z-index: -1;
+      }
+      .button:hover::after {
+        background: rgb(32, 32, 32);
+        transform: translateX(0);
+        color: whitesmoke;
+      }
+      /* .msg {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        font-size: 30px;
+        color: transparent;
+        background-color: transparent;        
+        border-radius: 20px;
+        padding: 6px 30px;
+        border:none ; 
+        transition: all 1s;      
+      }
+      .msg:hover {
+        color: rgb(255, 255, 255); 
+
+      } */
+
+    </style>
+</head>
+<body>
+ <div class="wrap">
+   <div class="button">Read more</div>
+   <!-- <div class="msg">move</div> -->
+  </div>
+</body>
+</html>
