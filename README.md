@@ -63,3 +63,27 @@ diplay:flex 와 position: sitky 를 메인으로 활용하여 만들어 봤는�
 <br>
          
 <img width="500px" src="https://user-images.githubusercontent.com/89508217/140650367-2077ba68-d2ea-484d-9a44-91faa4c790b5.jpg">
+
+<br>
+<br>
+
+# 버튼 만들기.
+
+<br>
+
+### 개인공부
+
+<br>
+<br>
+transform 과 transition 그리고 animation 복습을 목적으로 만든 버튼 1.2
+<br>
+아직 생각하는 거처럼 나오지는 않지만 틈틈히 만들어볼 생각.
+<br>
+시각적 느낌과 동적인 느낌을 주기 위해서 transform 과 transition 그리고 animation 을 사요함.
+<br>
+
+<img width="400px" src="https://user-images.githubusercontent.com/89508217/141352105-a1c9e1a5-487f-4d6d-9cff-920b900cb8a8.gif">
+
+<img width="400px" src="https://user-images.githubusercontent.com/89508217/141352160-bd99c48b-73ec-4e6f-854e-912c68070988.gif">
+
+<br>
