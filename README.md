@@ -87,3 +87,29 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 <img width="400px" src="https://user-images.githubusercontent.com/89508217/141352160-bd99c48b-73ec-4e6f-854e-912c68070988.gif">
 
 <br>
+<br>
+
+
+# 정글 시네마 페이지 만들기.
+
+<br>
+<br>
+
+### 과제
+
+<br>
+
+* 처음에 클론코딩 과제로 나왔지만 다른 작은 과제들이 많아서 이번 과제는 강사님과 함께 진행 되었고 100% 완성은 아니고 안에 세부적인 내용들은 따로 작업을 더 해줘야한다.
+* 최대한 문서의 문맥과 구조에 맞는 태그들을 사용하고 알맞는 클래스 네이밍으로 간결하고 의미에 맞는 코드작성이 중요하다는걸 알게 되었다.
+
+<br>
+
+![정글시네마](https://user-images.githubusercontent.com/89508217/141681945-85347b39-5f2c-4f0c-b0b7-779fc77cad94.png)
+
+<br>
+
+
+[정글시네마 링크](https://chry8822.github.io/front_end_like_lion_learning/%EC%A0%95%EA%B8%80%EC%8B%9C%EB%84%A4%EB%A7%88/%EA%B3%BC%EC%A0%9C1(%EB%9D%BC%EC%9D%B4%EC%BA%A3)/Cinema.html)
+
+<br>
+<br>
