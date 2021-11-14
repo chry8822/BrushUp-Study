@@ -104,12 +104,16 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 
 <br>
 
+[정글시네마 링크](https://chry8822.github.io/front_end_like_lion_learning/%EC%A0%95%EA%B8%80%EC%8B%9C%EB%84%A4%EB%A7%88/%EA%B3%BC%EC%A0%9C1(%EB%9D%BC%EC%9D%B4%EC%BA%A3)/Cinema.html)
+
+<br>
+
 ![정글시네마](https://user-images.githubusercontent.com/89508217/141681945-85347b39-5f2c-4f0c-b0b7-779fc77cad94.png)
 
 <br>
 
 
-[정글시네마 링크](https://chry8822.github.io/front_end_like_lion_learning/%EC%A0%95%EA%B8%80%EC%8B%9C%EB%84%A4%EB%A7%88/%EA%B3%BC%EC%A0%9C1(%EB%9D%BC%EC%9D%B4%EC%BA%A3)/Cinema.html)
+
 
 <br>
 <br>
