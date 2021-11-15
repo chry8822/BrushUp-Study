@@ -23,6 +23,7 @@ time, video {
     font: inherit;
     vertical-align: baseline;
     text-decoration: none;
+    color:black;
     
 }
 /* HTML5 display-role reset for older browsers */
@@ -59,4 +60,9 @@ table {
     height: 1px;
     margin: -1px;
     overflow: hidden;
+}
+button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
 }
