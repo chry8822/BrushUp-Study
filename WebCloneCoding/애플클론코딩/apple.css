@@ -11,7 +11,6 @@ body {
   flex-direction: column;
 }
 
-
 .head-nav {  
   position: fixed;
   width: 100%;
@@ -33,6 +32,7 @@ body {
 }
 
 .nav-list  .item {  
+  transform: translateY(-1px);
   font-size: 12px;
   /* width: 3.5em; */
 }
@@ -71,4 +71,38 @@ header .shop-txt {
 }
 .shop-txt a {
   color: #fff;
+}
+.cont-shop {
+  background-color: #EAF2FC;
+  padding-bottom: 41px;
+}
+
+.shop-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-shop img {
+  display: block;
+  margin: 37px auto 10px auto;
+}
+.gift-shop strong, .shop-wrap p strong {
+  display: block;
+  font-size: 56px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.shop-link {
+  display: block;
+  color: #0773df;
+  font-size: 21px;
+  font-weight: 400;  
+  text-align: center;
+  margin-top: 15px;
+}
+.shop-img-wrap {
+  display: flex;  
+  margin: 41px 0 25px;
 }
