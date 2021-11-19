@@ -53,7 +53,7 @@ table {
     display: block;
     width:100%;
 } */
-.blind{
+.ir{
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -65,4 +65,8 @@ button {
     background-color: transparent;
     border: 0;
     outline: 0;
+}
+.img {
+    width: 100%;
+    vertical-align: top;
 }
