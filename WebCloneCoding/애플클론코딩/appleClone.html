@@ -16,10 +16,10 @@
 
   <!-- 헤더 -->
   <header>
-      <h1 class="blind">애플 메인메뉴</h1>
+      <h1 class="ir">애플 메인메뉴</h1>
       <nav class="head-nav">
         <ul class="nav-list">
-          <li><a href="#none"><img class="icon home" src="./애플 이미지/애플 홈 아이콘.svg" alt="apple home"></a></li>
+          <li><a href="#none"><img class="icon home" src="./img/애플 홈 아이콘.svg" alt="apple home"></a></li>
           <li class="item"><a href="#none">스토어</a></li>
           <li class="item"><a href="#none">Mac</a></li>
           <li class="item"><a href="#none">ipad</a></li>
@@ -32,39 +32,40 @@
           <li class="item"><a href="#none">고객지원</a></li>
           <li class="item">
             <button>
-            <img  class="icon search" src="./애플 이미지/애플 서치 아이콘.svg" alt="search">
+            <img  class="icon search" src="./img/애플 서치 아이콘.svg" alt="search">
             </button>   
           </li>          
           <li class="item">
             <button>          
-            <img  class="icon cart" src="./애플 이미지/애플 장바구니 아이콘.svg" alt="cart">
+            <img  class="icon cart" src="./img/애플 장바구니 아이콘.svg" alt="cart">
             </button>
           </li>
         </ul>
       </nav>
-      <p class="shop-txt">엄선된 최고의 연말연시 선물, 미리 쇼핑하세요. <a href="#none">지금 쇼핑하기</a></p>
-  </header>
-  <!-- 메인 -->
-
-  
-  <main class="app">
-
-    <!-- 섹션 1 -->
-
-
-    <section class="cont-shop">
+    </header>
+    <!-- 메인 -->
+    
+    
+    <main id="app">
+      
+      <!-- 섹션 1 -->
+      
+      
+      <section class="cont-shop">
+        <h2 class="ir">연말 연시 선물 쇼핑</h2>
+        <p class="shop-txt">엄선된 최고의 연말연시 선물, 미리 쇼핑하세요. 
+          <a href="#none">지금 쇼핑하기</a></p>
       <a class="shop-link-shop" href="#none">선물 쇼핑하기</a>
       <a class="backgr-link-shop" href="#none"></a>
-      <h2 class="blind">연말 연시 선물 쇼핑</h2>
         <article class="shop-wrap">
           <div class="gift-shop">
-            <img src="./애플 이미지/1섹션1로고.png" alt="">
+            <img src="./img/1섹션1로고.png" alt="">
             <strong>누구나 행복한 올 연말연시.</strong>
           </div>
           <div class="shop-img-wrap">
-            <img src="./애플 이미지/1섹션1.png" alt="Macbook">
-            <img src="./애플 이미지/1섹션2.png" alt="ipad">
-            <img src="./애플 이미지/1섹션3.png" alt="ipadmini">
+            <img src="./img/1섹션1.png" alt="Macbook">
+            <img src="./img/1섹션2.png" alt="ipad">
+            <img src="./img/1섹션3.png" alt="ipadmini">
           </div>
         </article>
      
@@ -72,39 +73,46 @@
 
 
     <!-- 섹션2 -->
-    <section>
-      <h2 class="blind">아이폰13프로</h2>
-      <a class="backgr-link" href="#none"></a>
-      <article class="shop-wrap">
+    <section class="cont-pro">
+      <h2 class="ir">아이폰13프로</h2>
+      <a class="backgr-link-shop" href="#none"></a>
+      <article class="shop-wrap pro">
         <p>
-          <strong>iPhone 13 Pro</strong> <br>
-          이게 바로 프로.
+          <strong class="shop-pro-txt">iPhone 13 Pro</strong>이게 바로 프로.
         </p>
-        <a class="shop-link" href="#none">더 알아보기</a>
-        <a class="shop-link" href="#none">구입하기</a>
-        <img src="./애플 이미지/2섹션1.jpg" alt="iphone13pro">
+        <article class="shop-buy-more">
+          <a class="shop-link pro" href="#none">더 알아보기</a>
+          <a class="shop-link pro" href="#none">구입하기</a>
+        </article>
+        <div class="pro-img"></div>
       </article>
     </section>
     <!-- 섹션3 -->
-    <section>
-      <h2 class="blind">아이폰13</h2>
+    <section class="cont-basic">
+      <h2 class="ir">아이폰13</h2>
+      <a class="backgr-link-shop-basic" href="#none"></a>
       <a class="backgr-link" href="#none"></a>
-      <article>
+      <article class="basic-wrap">
         <p>
           <strong>iPhone 13</strong> <br>
           일상을 위한 비상한 능력.
         </p>
-        <a class="shop-link" href="#none">더 알아보기</a>
-        <a class="shop-link" href="#none">구입하기</a>
-        <img src="./애플 이미지/3섹션1.jpg" alt="iphone13">
+        <article class="shop-buy-more-basic">
+          <a class="shop-link basic" href="#none">더 알아보기</a>
+          <a class="shop-link basic" href="#none">구입하기</a>
+        </article>
       </article>
+      <div class="pro-img"></div>
     </section>
     <!-- 섹션4 -->
-    <section>
-      <a class="backgr-link" href="#none"></a>
-      <h2 class="blind">기타 제품들</h2>
-      <article>
-        <ul>
+    <section class="cont-etc">
+      <!-- <a class="backgr-link" href="#none"></a> -->
+      <h2 class="ir">기타 제품들</h2>
+      <article class="etc-wrap">
+        <ul class="etc-list">
+
+
+          
           <li>
             <a class="backgr-link" href="#none"></a>
             <p>
@@ -114,8 +122,11 @@
             </p>
             <a class="etc shop-link" href="#none">더 알아보기</a>
             <a class="etc shop-link" href="#none">가격 보기</a>
-            <img src="./애플 이미지/4섹션1.jpg" alt="iphone13">
+            <img src="./img/4섹션1.jpg" alt="iphone13">
           </li>
+
+
+
           <li>
             <a class="backgr-link" href="#none"></a>
             <p>
@@ -125,23 +136,23 @@
             </p>
             <a class="etc shop-link" href="#none">더 알아보기</a>
             <a class="etc shop-link" href="#none">주문 보기</a>
-            <img src="./애플 이미지/4섹션2.jpg" alt="iphone13">
+            <img src="./img/4섹션2.jpg" alt="iphone13">
           </li>
           <li>
             <a class="backgr-link" href="#none"></a>
-            <img src="./애플 이미지/4섹션3-1.png" alt="">
+            <img src="./img/4섹션3-1.png" alt="">
             <strong>더크게 앞서 나아가다</strong>
-            <a class="etc-shop-link" href="#none">더 알아보기</a>
-            <a class="etc-shop-link" href="#none">구입 하기</a>
-            <img src="./애플 이미지/4섹션3.jpg" alt="iphone13">
+            <a class="etc shop-link" href="#none">더 알아보기</a>
+            <a class="etc shop-link" href="#none">구입 하기</a>
+            <img src="./img/4섹션3.jpg" alt="iphone13">
           </li>
           <li>
             <a class="backgr-link" href="#none"></a>
-            <img src="./애플 이미지/4섹션4-1.png" alt="">
+            <img src="./img/4섹션4-1.png" alt="">
             <strong>메가급 성능. 크기만 미니.</strong>
-            <a class="etc-shop-link" href="#none">더 알아보기</a>
-            <a class="etc-shop-link" href="#none">구입 하기</a>
-            <img src="./애플 이미지/4섹션4.jpg" alt="iphone13">
+            <a class="etc shop-link" href="#none">더 알아보기</a>
+            <a class="etc shop-link" href="#none">구입 하기</a>
+            <img src="./img/4섹션4.jpg" alt="iphone13">
           </li>
           <li>
             <a class="backgr-link" href="#none"></a>
@@ -151,20 +162,20 @@
             </p>
             <a class="etc shop-link" href="#none">더 알아보기</a>
             <a class="etc shop-link" href="#none">구입 하기</a>
-            <img src="./애플 이미지/4섹션5.jpg" alt="iphone13">
+            <img src="./img/4섹션5.jpg" alt="iphone13">
           </li>
           <li>
             <a class="backgr-link" href="#none"></a>
-            <img src="./애플 이미지/4섹션6-2.png" alt="">
+            <img src="./img/4섹션6-2.png" alt="">
             <div>톰 행크스</div>
-            <img src="./애플 이미지/4섹션6-1.png" alt="iphone13">
+            <img src="./img/4섹션6-1.png" alt="iphone13">
             <a href="#none">지금 시청하기</a>
           </li>
         </ul>
       </article>
     </section>
     <!-- 풋터 -->
-    <footer>
+    <!-- <footer>
       <section>
         <p>
           Ape TV+는 무료 체험 기간이 끝나면 월 6,50000원에 이용할 수 있습니다. 하나의 멤버십으로 가족 공유 그룹 내 식구 전체가 이용 가능합니다. 무료 체험 혜택은 적용 대상 기기 활성화 이후 3개월 안에 신청할 수 있습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타 
@@ -269,7 +280,7 @@
           </dl>          
         </footer>
       </section>
-    </footer>
+    </footer> -->
   </main>
 
 </body>
