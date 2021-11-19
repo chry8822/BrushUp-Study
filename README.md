@@ -118,6 +118,19 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 <br>
 <br>
 
+# 애플 공식사이트 클론하기.
 
+<br>
+<br>
+* html ,css 로 첫 메인페이지 진행중
+* 최상단 메뉴를 fixed 했을때 다음 relative에서 사라져서 z-index 를 사용해서 위로 올려서 해결
+* 매 섹션 마다 섹션 전체가 앵커로 클릭이 되어야 하고 쇼핑하기, 더알아보기, 구입하기 텍스트가 앵커로 작동해야되는데 화면 전체가 앵커로 작혀 있어야해서 
+* position : abosolute , z-index(텍스트앵커보다 아래로) . 높이와 너비는 해당 섹션 이미지에 맞춤, background-color 는 transparent 로 주니까 전체 앵커로 잡히고 그위에 텍스트 앵커만 따로 잡힘.
+* 전체로 잡힌 앵커에 접근성과 스크린리더기에 읽히도록 텍스트로 어디로 이동하는지 작성 해야될거 같다.
+* 지금까지 배우고 내가 아는 내용으로 작업하느라 css가 정리가좀 안되고 중간중간 구글링으로 찾은 방법들이 섞여서 일단 완성후에 리뷰해봐야 될거 같음.
+* 아직 섹션3 까지 진행중...
+
+<br>
+<br>
 
 [애플 클론 코딩 진행중...](https://chry8822.github.io/front_end_like_lion_learning/WebCloneCoding/%EC%95%A0%ED%94%8C%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/appleClone.html)
