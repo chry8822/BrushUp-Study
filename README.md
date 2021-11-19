@@ -17,7 +17,7 @@ HTML - 마크업 구조 이해하고 시멘틱한 태그로 구성해보기
 
 
  
-[ 복습내용링크 ](https://chry8822.github.io/front_end_like_lion_learning/html%20%EA%B3%BC%EC%A0%9C%20-%20%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EB%A7%88%ED%81%AC%EC%97%85/koreaStartup.html)
+[ 복습내용링크 ](https://chry8822.github.io/BrushUp-Study/html%20%EA%B3%BC%EC%A0%9C%20-%20%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EB%A7%88%ED%81%AC%EC%97%85/koreaStartup.html)
 
  
 <br>
@@ -59,7 +59,7 @@ diplay:flex 와 position: sitky 를 메인으로 활용하여 만들어 봤는�
 아래는 완성된 이미지 와 링크
 <br>
 
-[ 링크 바로가기 ](https://chry8822.github.io/front_end_like_lion_learning/YoutubeClone/%EC%9C%A0%ED%8A%9C%EB%B8%8C%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%ED%81%B4%EB%A1%A0%20%EC%BD%94%EB%94%A9/Youtube.html)
+[ 링크 바로가기 ](https://chry8822.github.io/BrushUp-Study/YoutubeClone/%EC%9C%A0%ED%8A%9C%EB%B8%8C%20%ED%8E%98%EC%9D%B4%EC%A7%80%20%ED%81%B4%EB%A1%A0%20%EC%BD%94%EB%94%A9/Youtube.html)
          
 <br>
          
@@ -105,7 +105,7 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 
 <br>
 
-[정글시네마 링크](https://chry8822.github.io/front_end_like_lion_learning/%EC%A0%95%EA%B8%80%EC%8B%9C%EB%84%A4%EB%A7%88/%EA%B3%BC%EC%A0%9C1(%EB%9D%BC%EC%9D%B4%EC%BA%A3)/Cinema.html)
+[정글시네마 링크](https://chry8822.github.io/BrushUp-Study/%EC%A0%95%EA%B8%80%EC%8B%9C%EB%84%A4%EB%A7%88/%EA%B3%BC%EC%A0%9C1(%EB%9D%BC%EC%9D%B4%EC%BA%A3)/Cinema.html)
 
 <br>
 
@@ -136,4 +136,4 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 <br>
 <br>
 
-[애플 클론 코딩 진행중...](https://chry8822.github.io/front_end_like_lion_learning/WebCloneCoding/%EC%95%A0%ED%94%8C%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/appleClone.html)
+[애플 클론 코딩 진행중...](https://chry8822.github.io/BrushUp-Study/WebCloneCoding/%EC%95%A0%ED%94%8C%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/appleClone.html)
