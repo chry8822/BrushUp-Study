@@ -45,7 +45,7 @@ body {
     width: 100%;
     max-width: 386px;
     height: 180px;
-    background: no-repeat center / 100% 100% url(../day15-1/resource/img/logo.png);
+    background: no-repeat center / 100% 100% url(./resource/img/logo.png);
 }
 
 /* 자판기 스타일링 */
