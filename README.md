@@ -137,3 +137,36 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 <br>
 
 [애플 클론 코딩 진행중...](https://chry8822.github.io/BrushUp-Study/WebCloneCoding/%EC%95%A0%ED%94%8C%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/appleClone.html)
+
+
+
+<br>
+<br>
+
+
+# 자판기 만들기 .
+
+<br>
+
+##  html. css 활용 과제
+
+<br>
+
+*  자바스크립트가 포함된 과제에서 아직 배우지 않은 JS 를 제외한 html css 로 만든 자판기 화면
+*  각 요소마다 겹치는 요소들은 하나씩 만들어서 모듈 처럼 나중에 추가
+*  음료수와 버튼들을 엑티브와 가상요소로 효과를 주어 클릭시 이펙트
+*  품절 이미지는 가상요소 처리.
+*  미디어 쿼리  min-width 320 px  /  max-width 480 px  /   -webkit-min-device-pixel-ratio:2  /
+
+
+<br>
+<br>
+
+![자판기 완성이미지](https://user-images.githubusercontent.com/89508217/142726935-f1b7b5ee-b93c-4234-b10c-b90c348a4053.png)
+
+<br>
+
+[자판기 완성 링크](https://chry8822.github.io/BrushUp-Study/VendingMC/index.html)
+
+<br>
+<br>
