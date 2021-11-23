@@ -194,4 +194,27 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 
 ![셀렉](https://user-images.githubusercontent.com/89508217/142880964-f8a4022a-8f84-499c-b3c3-ffc3fc521608.gif)
 
+<br>
+<br>
 
+# tailwindcss 로 이력서 만들기  .
+
+<br>
+<br>
+
+* 기존의 css스타일 작업 없이 익숙해지면 간단한 페이지는 쉽고 빠르게 만들수 있는 tailwindcss 를 사용하여 이력서를 만들었다.
+* bootstrap과 비슷하지만 조금 다른 느낌의 tailwindcss 이고 엄청나게 많은 기능은 아니지만 잘 조합하면 완성도 있는 페이지를 만들수 있는거 같다.
+* 웹으로 볼수도 있기때문에 약간의 애니메이션 기능을 추가했다.
+* 처음이라 몇시간 정도 걸렸지만 처음 치고는 원하는 느낌 비슷하게 나와서 만족 중이다. 좀더 다양한 시도를 해봐야 겠다.
+
+<br>
+<br>
+
+ [완성링크(내용은 미완)](https://chry8822.github.io/BrushUp-Study/MakeResume/이력서만들기.html)
+
+<br>
+
+![완성사진](https://user-images.githubusercontent.com/89508217/142998121-b31b2ec7-fc0b-4877-974a-37345ee96fc8.png)
+
+<br>
+<br>
