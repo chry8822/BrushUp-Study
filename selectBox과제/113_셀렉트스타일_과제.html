@@ -91,8 +91,7 @@
 
   .btn-select {
     font-size: 12px;
-    width: 200px;
-    height: 40px;
+    width: 200px;   
     border-radius: 10px;
     border: 1px solid #c4c4c4;
     background-color: #FFF;
@@ -109,25 +108,30 @@
       box-shadow: 0 0 0 3px #F8E4FF; 
       cursor: pointer;
   }
+  .btn-select.on {
+    background: url(./Polygon\ 2.png) no-repeat ;
+    background-position: 175px 50%;
+   
+  }
 
   .list-member {
-    display: none;
-    width: 200px;
-    height: 100%;
-    border: 1px solid #c4c4c4;
-    border-radius: 10px;
-    margin-top: 10px;
+    display: none;   
     overflow: hidden;
     transition: all .3s;
-    
+    box-sizing: border-box;
 }
     
 
 .list-member.on {
     display: block;
     box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1) ;  
-  
+    width: 200px;
+    height: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    margin-top: 10px;
 }
+
 
 
 .btn-select:active+.list-member {
@@ -138,10 +142,10 @@
 
 .list-member li {
     position: relative;
-    width: 200px;
+    width: 100%;
     height: 40px;
     border-radius: 10px;
-    padding: 12px 0 12px 18px ;
+    /* padding: 12px 0 12px 18px ; */
     box-sizing: border-box;
    
     
@@ -149,23 +153,29 @@
 }
 
 .list-member li button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    left: 14px;
     width: 160px;
     text-align: left;
-    vertical-align: top;
     font-size: 14px;  
     display: inline-block;        
     border: none;
     background-color:#fff;
-    line-height: 100%;
     padding: 0;
     transition:all 0.1s;
     
 }
 .list-member li button:hover { 
+    width: 170px;
+    height: 30px;
     background-color: #F8E4FF;   
     font-size: 16px;  
     font-weight: 600;
     cursor: pointer;
+    border-radius: 5px;
 
 }
 /* .list-member li::after {
@@ -190,17 +200,15 @@
     height: 30px;
    
 } */
-.list-member li button::after {
+/* .list-member li button::after {
     content: "";
     position: absolute;
-    /* background-color: #F8E4FF; */
     width: 0;
     height: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    /* padding: 7px 0; */
     box-sizing: border-box;
     border-radius: 10px;
     transition:all 0.1s;
@@ -213,7 +221,7 @@
     height: 30px;
     cursor: pointer;
    
-}
+} */
 </style>
 <body>
 
@@ -239,6 +247,7 @@
     const list = document.querySelector('.list-member');
     btn.addEventListener('click', () => {
        list.classList.toggle('on');
+       btn.classList.toggle('on');
     });
     list.addEventListener('click', (event) => {
         if (event.target.nodeName === "BUTTON") {
@@ -247,5 +256,7 @@
         }
     });
     </script>
+
+    
 </body>
 </html>
