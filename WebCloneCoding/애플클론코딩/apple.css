@@ -11,8 +11,10 @@ body {
   flex-direction: column; 
 }
 #app {
-  
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .head-nav {    
@@ -260,9 +262,10 @@ padding-left: 3px;
 
 .cont-basic {
   position: relative;
-  max-width: 2560px;
-  left: 50%;
-  transform: translateX(-50%);   
+  width: 2560px;
+  margin: 0 auto;
+  height: 692px;
+
   margin-bottom: 12px;
 }
 .backgr-link-shop-basic {
@@ -349,11 +352,11 @@ padding-left: 3px;
 /*   섹션   4   */
 
 .cont-etc {
-  position: relative;
+  /* position: relative;
   max-width: 2560px;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 12px;
+  margin-bottom: 12px; */
 
 }
 .etc-items .backgr-link {
@@ -362,9 +365,10 @@ padding-left: 3px;
 
 .cont-etc{
   width: 2560px;
+  margin: 0 auto;
 }
 .etc-list {  
-  position: absolute;
+ 
   display: grid ;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -389,6 +393,19 @@ padding-left: 3px;
   max-width: 100%;
   height: auto;
   
+}
+.etc-imgs{
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+.etc-last-img {
+ 
+  top: 0;
+  left: 0;
+  transform: translateX(-50% -50%);
+  width: 100%;
+  height: auto;
 }
 .etc-items:nth-child(n+3):nth-child(-n+4){
   position: relative;
@@ -428,3 +445,8 @@ padding-left: 3px;
 
 width: 1262px; 
 height: 580px; */
+
+
+
+/*  풋터  */
+
