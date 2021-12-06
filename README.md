@@ -3,6 +3,8 @@
 <br>
 <br>
 <br>
+
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
  
 <h3>수업 복습</h3><br>
 <br>
@@ -75,6 +77,11 @@ diplay:flex 와 position: sitky 를 메인으로 활용하여 만들어 봤는�
 ### 개인공부
 
 <br>
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a> 
+
+<br>
 <br>
 transform 과 transition 그리고 animation 복습을 목적으로 만든 버튼 1.2
 <br>
@@ -97,6 +104,12 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 <br>
 
 ### 과제
+
+
+<br>
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a>
 
 <br>
 
@@ -121,6 +134,11 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 
 # 애플 공식사이트 클론하기.
 ### 개인공부
+
+<br>
+
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a>
 
 <br>
 <br>
@@ -152,6 +170,11 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 
 <br>
 
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a>
+
+<br>
+
 *  자바스크립트가 포함된 과제에서 아직 배우지 않은 JS 를 제외한 html css 로 만든 자판기 화면
 *  각 요소마다 겹치는 요소들은 하나씩 만들어서 모듈 처럼 나중에 추가
 *  음료수와 버튼들을 엑티브와 가상요소로 효과를 주어 클릭시 이펙트
@@ -178,6 +201,11 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 ##  css 활용 과제
 
 <br>
+
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a>
+
+<br>
 <br>
 
 * 마크업과 자바스크립트가 정해진 파일에서 css 를 이용해서 셀렉트 만들어보기.
@@ -198,6 +226,10 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 <br>
 
 # tailwindcss 로 이력서 만들기  .
+
+<br>
+
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> 
 
 <br>
 <br>
