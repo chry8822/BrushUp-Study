@@ -51,6 +51,22 @@ body {
   z-index: 9999;
   }
 
+.fixed-top {
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(59, 59, 59, 0.4);
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 9999;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px 0;
+  color: #fff;
+}  
+
 
 .nav-list {
   /* position: fixed; */  
@@ -202,9 +218,11 @@ padding-left: 3px;
 .shop-img-wrap {
   display: flex;  
   margin: 82px 0 25px;
+  flex-wrap: wrap;
   
 }
 .shop-img-wrap img {
+  /* width: 100%; */
   margin: 0 25px 0 25px;
 }
 
@@ -551,14 +569,107 @@ padding-left: 3px;
   width: 100%;
   height: 100%;
 }
-
-
-.etc-last-img {   
- 
+footer {
+  background-color: #f5f5f7;;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 12px;
 }
 
-↗
+.footer {
+  max-width: 980px;
+  margin: 0 auto;
 
+}
+
+.footer-txt {
+  text-align: left;
+  letter-spacing: 0em;
+  margin: 17px 0 11px;
+  line-height: 20px;
+}
+.footer-txt::after {
+  margin-top: 30px;
+  content: '';
+  display: block;
+  border: 1px solid rgba(90, 90, 90, 0.2);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav ul {
+  margin-top: 20px;
+  
+}
+.footer-nav ul li {
+  line-height: 30px;
+}
+.footer-nav ul .list-title {
+  font-weight: 600;
+}
+.foot-footer .foot-footer-txt {
+  margin: 34px 0 8px;
+}
+.footer-txt-link {
+  color: #06c;;
+}
+.foot-footer-txt::after {
+  content: '';
+  display: block;
+  border: 1px solid rgba(90, 90, 90, 0.2);
+  margin: 20px 0 15px;
+}
+
+.copy-txt {
+  width: 100%;
+  position: relative;
+  padding:0 0 30px 0;
+   
+}
+.copy-txt small {
+  position: absolute;
+}
+.copy-siteMap {
+  position: absolute;
+  display: flex;
+  left: 31%;
+} 
+.copy-siteMap-kr {
+  position: absolute;
+  right: 0;
+}
+.copy-siteMap li::after {
+  content: '';
+  border-right: 1px solid rgba(90, 90, 90, 0.2);
+  margin:0 10px ;
+}
+.copy-siteMap li:last-child::after{
+  border: none;
+} 
+.com-info {
+  padding-bottom: 30px;
+}
+.com-info dt{
+  float: left;
+  color: #999999;
+}
+.com-info dd{
+  float: left;
+  color: #999999;
+  margin: 0;
+  display: inline-block;
+  margin-left: 5px;
+}
+.com-info dd::after {
+  content: '';
+  border-right: 1px solid rgba(90, 90, 90, 0.2);
+  margin:0 5px ;
+}
+.com-info dd:last-child::after{
+  border: none;
+} 
 /* 40px
 
 21px
