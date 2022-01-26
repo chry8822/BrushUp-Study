@@ -262,3 +262,12 @@ transform 과 transition 그리고 animation 복습을 목적으로 만든 버�
 
 <br>
 <br>
+
+# 코딩애플 자바스크립트
+
+<br>
+
+### this
+  * 일반 함수에서 this는 window
+  * 오브젝트 내의 함수(메소드)에서 사용하면 함수를 동작시키는 오브젝트
+  * 화살표함수에 this 는 내부의 this값을 변화시키지 않는다.(외부 this 값을 그대로 재사용)
