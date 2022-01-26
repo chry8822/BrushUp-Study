@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div style="display : none">모달창0</div>
+  <div style="display : none">모달창1</div>
+  <div style="display : none">모달창2</div>
+
+  <button>버튼0</button>
+  <button>버튼1</button>
+  <button>버튼2</button>
+
+  <script>
+    // 호이스팅, 자바스크립트 엔진은 위에서 아래로 순차적으로 실행되는데 변수 선언은 위로 
+    //끌어올려지는 거처럼 작동한다.
+    console.log(나이);  // 변수 선언 전이지만 에러가 아닌 undefined 로 초기화됨
+
+    var 나이 = 30;
+    console.log(나이); // 30 
+
+
+    // 변수 동시에 여러개 만들기 let, const  모두 가능.
+    var 나이, 이름, 성별;
+    var 나이 = 10, 이름 = "오국화", 성별 = "남";
+
+    // 전역변수 : 모든 곳에서 쓸수있는 변수
+    var 나이 = 20;  // 바깥 , 외부에 선언된 변수는 자유롭게 사용가능(전역변수)
+
+    function 함수() {
+      var 이름 = "kim" // 지역변수
+      console.log(나이) // 안쪽.
+    }
+    함수();
+
+    //window로 전역변수 만들기
+    //window는 자바스크립트 기본함수를 담은{오브젝트}
+    //window { 몸무게 : 80 }
+    window.몸무게 = 80; // 전역변수 선언시 권장되는 방법
+    console.log(몸무게); // 80
+
+    //함수선언도 호이스팅이 일어난다.
+
+    //연습문제
+
+    if (true) {
+      let a = 1;
+      var b = 2;
+      if (true) {
+        let b = 3; // let 은 {} 블록단위 스코프
+      }
+      console.log(b); // 결과 2
+    }
+
+    // 무엇이 출력되는가.
+    함수();
+    function 함수() {
+      console.log(안녕);
+      let 안녕 = "hello";
+    }
+    // 함수는 호이스팅되서 함수실행은 된다. 하지만 함수안에 안녕이 선언되기전에 출력하게 되어서
+    // 에러가 난다. let 도 호이스팅이 되지만 undefined 로 초기화 되지 않기 때문에 에러가 난다.
+    // let, const 는 자동으로 undefined 로 초기화 할당 되지 않는다.
+    // let, const 는 var와 다르게 선언단계와 초기화 단계가 분리되어 있어서 호이스팅되어 
+    // 실행컨텍스트에는 변수를 등록했지만 할당되지 않기 때문에 참조 에러가 난다.
+    // 선언 단계와 초기화 단계 사이를 TDZ 라고 한다.
+    // temporal deadzone / uninitialized
+    // TDZ =  스코프의 시작 지점부터 초기화 시작 지점까지의 구간
+
+    // 무엇이 출력되는가.
+    함수();
+    var 함수 = function () {
+      console.log(안녕);
+      var 안녕 = 'Hello!';
+    }
+    // 함수표현식도 호이스팅되지만 표현식은 선언부분만 호이스팅되서 타입에러 함수가 아니다 에러가 발생한다. (할당부분은 호이스팅 안됨)
+
+
+    // 무엇이 출력되는가.
+    let a = 1;
+    var 함수 = function () {
+      a = 2;
+    }
+    console.log(a); // 결과 1
+
+    // 함수를 실행하지 않았기 때문에 변수의 값이 변화없이 1이 나온다.
+
+
+
+    // 무엇이 출력되는가.
+    let a = 1; // 가장 가까운 범위의 값을 사용하려고 한다.
+    var b = 2;
+    window.a = 3;
+    window.b = 4; // 2에서 4로 재할당 된다.
+
+    console.log(a + b);
+    // a = 1 , b = 4 결과 5
+
+
+    // 1~5 까지 콘솔 출력
+    for (let i = 1; i < 6; i++) {
+      setTimeout(function () { console.log(i); }, i * 1000);
+    }
+
+
+
+    for (let i = 0; i < 3; i++) {
+
+      버튼들[i].addEventListener('click', function () {
+        모달창들[i].style.display = 'block';
+      });
+
+    }
+
+  </script>
+</body>
+
+</html>
