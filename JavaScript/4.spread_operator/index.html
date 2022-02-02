@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    var Array = ['hello', 'world'];
+    console.log(Array);
+    // (2) ['hello', 'world']
+
+    //전개연산자
+    var Array = ['hello', 'world'];
+    console.log(...Array);
+    // hello world
+    // 배열에 전개연산자를 사용하면 대괄호를 제거
+
+    var str = "hello";
+    console.log(...str)
+    // h e l l o
+    // 문자에 붙이면 펼쳐진다.(문자도 배영처럼 인덱싱이 가능하기 때문)
+
+
+    // 사용예시 
+    // 배열 합치기.
+    var a = [1, 2, 3];
+    var b = [4, 5];
+    var c = [...a, ...b];
+    console.log(c)
+    //  [1, 2, 3, 4, 5]
+
+    // Deep copy
+    var a = [1, 2, 3];
+    var b = a; // 이렇게(등호로 복사) 할당하면 값을 공유한다. 
+    var c = [...a];
+    // 전개연산자로 한번 풀었다가 다시 새로운값으로 배열을 저장 (Deep copy) 독립적인 자료를 만들때
+
+
+    a[3] = 4; // a 배열에 추가했지만 b 에서도 참조하기땜에 b 값도 변함
+
+    console.log(a); //  [1, 2, 3, 4]
+    console.log(b); //  [1, 2, 3, 4]
+    console.log(c); //  [1, 2, 3]
+
+    // 참고 배열이나 객체는 레퍼런스 타입데이터 이기 때문에 값의 공유가 일어난다.
+
+    // 오브젝트 합치기
+    var o1 = { a: 1, b: 2 };
+    var o2 = { ...o1, c: 3 };
+    console.log(o2);
+    // {a: 1, b: 2, c: 3}
+    // 중골호도 제거할수있다.
+    // 객체도 Deep copy 가능.
+    // 값의 중복이 일어나면 가장 뒤에 있는 값으로 적용한다
+
+    // 참고 전개연산자는 대괄호, 중괄호, 함수 소괄호 안에서 사용 할수있다.
+
+
+    // 전개연산자 연습문제
+    var a = [1, 2, 3];
+    var b = '김밥';
+    var c = [...b, ...a];
+    console.log(c);
+
+    // ['김', '밥', 1, 2, 3] 문자는 배열안에서 전개연산자로 쪼개진다.
+
+    var a = [1, 2, 3];
+    var b = ['you', 'are'];
+    var c = function (a, b) {
+      console.log([[...a], ...[...b]][1])
+    }
+    c(a, b);
+    // you
+    console.log([[1, 2, 3], ...['you', 'are']][1])// ...a = [1,2,3] ...b = [you,are] 
+    console.log([[1, 2, 3], 'you', 'are'][1])     // ...a = [1,2,3] ...b =  you,are
+    결과 you
+
+
+    // 함수 파라미터 넣을때
+    // 배열 내의 모든 데이터를 파라미터로 넣고 싶은경우
+    var array = [10, 20, 30]
+    function plus(a, b, c) {
+      console.log(a + b + c)
+    }
+
+    plus(...array);
+    // plus.apply(undefined, array); 옛날방식
+    // apply 설명
+
+    var person = {
+      hi: function () {
+        console.log(this.name + "hello")
+      }
+    }
+
+    var person2 = {
+      name: "kim"
+    }
+
+    person.hi.apply(person2, [1, 2]); //apply 는 파라미터를 배열 형태로도 넣을수있다.
+    // apply 는 함수를 옮겨와서 실행할수 있다.
+    // person의 hi 함수를 person2 에서 실행한다.
+    // kimhello
+
+    person.h2.call(person2, 1, 2); // call은 apply와 비슷하지만 배열형태로 파라미터 전달 x
+
+
+    // 연습문제
+
+    function 함수(a = 5, b = a * 2) {
+      console.log(a + b);
+      return 10
+    }
+    함수(3);
+    // 10
+
+    function 함수(a = 5, b = a * 2) {
+      console.log(a + b);
+    }
+    함수(undefined, undefined);
+    // 15
+
+    // 배열 제작 함수
+    function 어레이(...a) {
+      let array = [...a]
+      console.log(array)
+    }
+    어레이(10, 2, 1, 5, 3)
+
+    // 최댓값 구하기
+    var numbers = [2, 3, 4, 5, 6, 1, 3, 2, 5, 5, 4, 6, 7];
+    Math.max(...numbers)
+    // 7
+
+    // 글자를 알파벳 순으로 정렬하는 함수
+    function 정렬(a) {
+      console.log([...a].sort())
+    }
+    정렬('bear');
+    //['a', 'b', 'e', 'r']
+
+    //데이터마이닝 기능
+
+    function data(str) {
+
+      var total = {};
+      [...str].forEach((a) => {
+        if (total[a] > 0) {
+          total[a] = total[a] + 1;
+        } else {
+          total[a] = 1;
+        }
+      });
+      console.log(total)
+    }
+    data("aaccbbbac")
+
+  </script>
+</body>
+
+</html>
