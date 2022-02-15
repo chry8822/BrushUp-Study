@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    function 더하기(a, b) {
+      console.log(a) // 파라미터가 2개 들어가는 함수인데 1개만 들어가도 에러가 나지 않는다.
+    }
+
+    더하기(1);
+
+
+    // 함수의 default 파라미터
+    function 더하기(a, b = 10) {
+      // 파라미터 b 는 인자값이 없어도 기본으로 10을 가진다.(함수,수학연산도 가능 b = 2 * 5)
+      console.log(a + b)             // 인자값이 들어가면 그 값을 사용한다.
+    }
+
+    더하기(1);
+    //결과 11
+
+
+
+    // 함수의 arguments (옛날 문법) 
+    // 모든 파라미터를 한번에 다루고 싶을때 arguments
+    // 모든 파라미터를 [] 안에 넣은 변수
+    function 함수(a, b, c) {
+      console.log(arguments)
+      console.log(arguments[0])
+      console.log(arguments[1])
+      console.log(arguments[2])
+    }
+    함수(1, 2, 3)
+
+
+    연습문제
+    function 함수(a, b, c, d, e) {
+      for (let i = 0; i < arguments.length; i++) {
+        console.log(arguments[i])
+      }
+    }
+    함수(2, 5, 12, 2, 6)
+
+
+
+    // Rest 파라미터 (최신문법) 
+    // arguments 와 유사하지만 특정지어서 담을수 있어 유연하게 사용가능한 장점이 있다.
+    function 함수2(a, b, ...rest) {
+      //rest 자리에 원하는 작명 rest 파라미터는 파라미터를[배열]에 보관
+      console.log(rest)
+    }
+    함수2(2, 4, 5, 2, 3, 4)
+    // [5, 2, 3, 4]
+
+    // rest 파라미터로 하나씩 출력하기
+    function 함수2(...rest) {
+      rest.forEach((a) => console.log(a))
+    }
+    함수2(2, 4, 5, 2, 3, 4)
+    // 주의 ...rest 는 가장 위에 자리잡아야함
+
+  </script>
+</body>
+
+</html>
