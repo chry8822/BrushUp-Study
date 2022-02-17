@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+
+    const primitiveType = ["strings", 1234]
+    원시타입
+    변수에 값이 그대로 저장됨.
+
+    var array = [1, 2, 3];
+    비원시타입
+    변수에 reference가 저장된다.
+    [1, 2, 3]이라는 배열이 저쪽에 있습니다 라는 말과 같다.array
+    var object = { name: "kim" }
+    객체도 비원시타입.array
+
+
+    원시타입 - 각각의 값을 가진다.
+    var name1 = "kim";
+    var name2 = name1;
+    name1 = "park";
+
+    console.log(name1) = "park"
+    console.log(name2) = "kim"
+    name2의 값은 처음에 할당한 "kim"을 출력한다.
+
+
+
+      비원시타입 - Reference data type: 값을 가지고 있는 메모리 주소를 복사.(값의 공유)
+    var name1 = { name: "kim" }
+    var name2 = name1;
+    name1.name = "chrys"
+
+    console.log(name2)
+    { name: chrys }
+    name2의 값은 재할당한 값을 출력한다.
+
+
+    var name1 = { name: "chrys" }
+    function change(obj) {
+      obj = { name: "park" }
+    }
+
+    change(name1)
+    // { name: "chrys" } 바뀌지 않음
+    // 바뀌지 않은 이유는 change( var obj = name1 ) 같은 주소를 가르키는 파라미터이기 때문이다. 그렇기 때문에 객체를 할당하면 새로운 화살표가 생기고 기존의 name1 의 값이 변하지 않는다.
+  
+    파라미터는 변수생성 & 할당과 똑같다.
+
+
+  </script>
+</body>
+
+</html>
