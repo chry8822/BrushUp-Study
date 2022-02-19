@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    //하드코딩
+    var student = {
+      name: "kim",
+      age: 15,
+      sayHi() {
+        console.log("안녕하세요" + this.name + "입니다.")
+      }
+    }
+
+    student.sayHi();
+
+
+    // constructor(생성자)
+    function Student(name = "name") { // 함수에 파라미터를 뚫어둔다.
+      this.name = name;
+      this.age = 15;
+      this.sayHi = function () {
+        console.log(`안녕하세요 ${this.name} 입니다.`)
+      }
+    }
+    // this : 기계에서 새로 생성되는 object(instance)
+
+    var student1 = new Student("오국화");
+    student1.sayHi()
+    var student2 = new Student("안희원");
+    var student3 = new Student();
+
+
+    // 연습문제
+
+    function Product(name, price) {
+      this.name = name;
+      this.price = price;
+      this.pay = function () {
+        console.log(this.price * 0.1)
+      }
+    }
+
+    // prototype 은 유전자. 직역하면 원형
+    // prototpye 은 함수에만 생성된다.
+    // 상속을 구현할수 있는 또 하나의 무넙 prototype
+    // constructor 를 만드면 prototype 이라는 공간이 자동으로 생긴다.
+    // 부모의 prototype을 검사하고싶으면 __proto__
+
+    Product.prototype.gender = "남"
+
+    var product1 = new Product("shirts", 50000);
+    product1
+    product1.pay()
+
+    // __proto__ 를 이용해서 부모 강제 등록하기(알고만 있자)
+    var parent = { name: "kim" }
+    var child = {};
+    child.__proto__ = parent;
+    child.name
+
+
+
+    // 문제
+
+    function Student(이름, 나이) {
+      this.name = 이름;
+      this.age = 나이;
+    }
+
+    Student.prototype.sayHi = () => {
+      console.log('안녕 나는 ' + this.name + '이야');
+    }
+    var 학생1 = new Student('Kim', 20);
+
+    학생1.sayHi(); //왜 이 코드가 제대로 안나오죠?
+
+    // 화살표 함수안에 this는 재정의 되지 않고 바깥에 있는 this를 그대로 사용하는데
+    // 해당 코드의 바깥의 this 는 window 이므로 제대로 출력되지 못한다.
+
+    //연습문제
+
+    function Student(name, age) {
+      this.name = name;
+      this.age = age;
+      this.sayHi = function () {
+        console.log(`안녕 나는 ${this.name} 이야`)
+      }
+    }
+
+    let student1 = new Student("Kim", 18)
+    let student1 = new Student("Park", 28)
+    let student1 = new Student("Lee", 19)
+
+    //2
+
+    function Parent() {
+      this.name = 'Kim';
+    }
+    var a = new Parent();
+
+    a.__proto__.name = 'Park';
+    console.log(a.name)
+    // 처음에 a 에 kim 이 들어가고나서 a 의 부모 prototype 에 name을 park 을 추가했다
+    // a는 추가되기전에 부모 값을 받았기 때문에 Kim 이 출력된다.
+
+    //3
+
+    function Student(이름, 나이) {
+      this.name = 이름;
+      this.age = 나이;
+    }
+
+    Student.prototype.sayHi = () => {
+      console.log('안녕 나는 ' + this.name + '이야');
+    }
+    var 학생1 = new Student('Kim', 20);
+
+    학생1.sayHi(); //왜 이 코드가 제대로 안나오죠?
+    //화살표 함수를 사용했기때문인데 화살표 함수의 this값은 재정의 하지않고 상위의 this를 가져와서 사용하기 때문에 여기서 this 는 window 객체이다 그래서 학생1의 인자로 들어간 Kim 이 출려되지 않는다.
+
+
+
+    // 쉽게 상속하기.
+
+    // Object.create(); 컨스트럭터는 아님
+    var parents = { name: "Oh", age: 50 };
+    var child = Object.create(parents); // - 프로토타입 정의하기
+    child.name // "Oh" 나오는 이유는 자식이 name을 가지고 있나? 없으면 부모의 프로토타입에 name 있나? 있으면 출력 없으면 더 상위로 올라가서 찾게된다.
+
+    child.age = 20; // 자식에게 직접 20을 가지게 해주면 20이 출력된다.
+
+    var grandChild = Object.create(child); // child , parents의 프로토 타입 모두를 상속받는다.
+    //grandChild.name = "Oh", grandChild.age = 20 , age 는 바로위 child의 값을 가져온다(grandChild 의 age 값이 정의되지 않았기 때문임)
+   
+
+    //ES6 : class
+
+    class Parents {
+      constructor(){
+        this.name = "oh";
+        this.age = 30;
+        this.sayHi = function() { console.log("hello") } // 자식이 직접 함수를 가지게 된다.
+      }
+      sayHi(){ // 컨스트럭터 밖에 선언된것들은 부모의 prototype 에 추가 됨
+        console.log("hello2")
+      }
+    }
+
+    let child = new Parents();
+    child.__proto__ // child 부모의 유전자가 출력된다. 
+    Object.getPrototypeOf(child) // child 부모의 유전자가 출력된다. (좀더 눈에 익는 방법 가독성)
+
+    //객체지향 문법을 쓰는 이유는 object를 여러게 만들어 쓰려고 하는것
+
+    
+
+  </script>
+</body>
+
+</html>
