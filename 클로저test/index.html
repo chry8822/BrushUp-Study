@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>클로저</title>
+</head>
+<body>
+  <div id="text">0</div>   
+  <button id="btn">클로저버튼</button>
+  <button id="decreaseBtn">클로저마이너버튼</button>
+      
+  <script>
+    function num () {
+      let num = 0;
+        return function changeNum (e) {
+          if(e.currentTarget === increase){
+            num++;
+            console.log(num)
+            return num
+          }
+          else if (e.currentTarget === decrease) {
+            if(num <= 0) {
+              return 0
+            } else {
+              num--;
+              console.log(num)
+              return num
+            }
+          }
+          console.log(increase ,decrease)
+        } 
+      }
+      
+      
+    const result = num()
+
+    // result = changeNum(e)
+
+
+    const increase = document.querySelector("#btn")
+    const plusBtn = increase.addEventListener("click",changeText)
+
+    const decrease = document.querySelector("#decreaseBtn")
+    const minerBtn = decrease.addEventListener("click",changeText)
+    
+    function changeText(e) {
+       document.querySelector("#text").textContent = result(e);
+    }
+    
+    
+  </script>
+</body>
+</html>
